@@ -1,0 +1,13 @@
+const sideX = 5;
+const sideY = 6;
+const sideZ = 7;
+
+const semiPerimeter = (sideX + sideY + sideZ) / 2;
+
+const semiSideX = (semiPerimeter - sideX);
+const semiSideY = (semiPerimeter - sideY);
+const semiSideZ = (semiPerimeter - sideZ);
+
+const triangleArea = Math.sqrt(semiPerimeter * (semiSideX + semiSideY + semiSideZ));
+
+console.log(triangleArea);
